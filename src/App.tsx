@@ -1,10 +1,15 @@
 import React from "react";
-import Container from "./pages/Container";
+import { MapContextProvider } from "./pages/MapEditor.tsx/contexts/MapContext";
+import MapEditor from "./pages/MapEditor.tsx/MapEditor";
 
 const App = () => {
   return (
     <div className="App">
-      <Container />
+      <div style={{ width: "100vw", height: "100vh" }}>
+        <MapContextProvider>
+          <MapEditor />
+        </MapContextProvider>
+      </div>
     </div>
   );
 };
