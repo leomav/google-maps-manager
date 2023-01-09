@@ -11,7 +11,7 @@ const Credentials = () => {
     if (setGoogleApiKey) {
       setGoogleApiKey(inputValue);
     }
-  }, []);
+  }, [inputValue]);
 
   return (
     <div
@@ -49,7 +49,7 @@ const Credentials = () => {
           <Button
             disabled={inputValue.length === 0}
             variant="contained"
-            onSubmit={handleSubmit}
+            onClick={handleSubmit}
           >
             Submit
           </Button>

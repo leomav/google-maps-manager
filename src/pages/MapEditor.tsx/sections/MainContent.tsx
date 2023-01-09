@@ -5,7 +5,6 @@ import Map from "./Map";
 
 const MainContent = () => {
   const { googleApiKey } = useContext(MapContext);
-  console.log("main");
   return googleApiKey ? <Map /> : <Credentials />;
 };
 
