@@ -1,10 +1,10 @@
 import { TextField, Typography, Button } from "@mui/material";
 import { useCallback, useContext, useState } from "react";
 import InputField from "../../../components/InputField";
-import { MapContext } from "../contexts/MapContext";
+import { CredentialsContext } from "../contexts/CredentialsContext";
 
 const Credentials = () => {
-  const { setGoogleApiKey } = useContext(MapContext);
+  const { setGoogleApiKey } = useContext(CredentialsContext);
   const [inputValue, setInputValue] = useState("");
 
   const handleSubmit = useCallback(() => {

@@ -1,14 +1,13 @@
-import React from "react";
-import { MapContextProvider } from "./pages/MapEditor.tsx/contexts/MapContext";
+import { CredentialsContextProvider } from "./pages/MapEditor.tsx/contexts/CredentialsContext";
 import MapEditor from "./pages/MapEditor.tsx/MapEditor";
 
 const App = () => {
   return (
     <div className="App">
       <div style={{ width: "100vw", height: "100vh" }}>
-        <MapContextProvider>
+        <CredentialsContextProvider>
           <MapEditor />
-        </MapContextProvider>
+        </CredentialsContextProvider>
       </div>
     </div>
   );

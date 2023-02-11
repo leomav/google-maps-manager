@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { MapContext } from "../contexts/MapContext";
+import { CredentialsContext } from "../contexts/CredentialsContext";
 import Credentials from "./Credentials";
 import Map from "./Map";
 
 const MainContent = () => {
-  const { googleApiKey } = useContext(MapContext);
+  const { googleApiKey } = useContext(CredentialsContext);
   return googleApiKey ? <Map /> : <Credentials />;
 };
 
